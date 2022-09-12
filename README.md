@@ -23,6 +23,14 @@ The **Nextron Systems Aurora EDR Add-on for Splunk** provides search-time and CI
 
 - Has index-time configurations: false
 
+### Change Log
+
+> Version 0.2.0
+
+- Renamed sourcetype from `aurora-edr` to `nextron:aurora:edr` as per Splunk best practice
+- Reworked sourcetype configuration to extract file hash (SHA256 only at the moment - adapt if required) and use search time field extractions (as opposed to index-time) for flexibility
+- Added CIM compliance/mapping to the `Endpoint.Processes` and `Intrusion Detection` data models for use in [Splunk Enterprise Security](https://www.splunk.com/en_us/products/enterprise-security.html)
+
 ## Installation/Configuration
 
 1. Visit [https://www.nextron-systems.com/aurora/](https://www.nextron-systems.com/aurora/) and request an Aurora Lite package by submitting the download form
